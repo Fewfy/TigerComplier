@@ -1,0 +1,45 @@
+%{
+#include <math.h>
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+
+int charPos = 1;
+int commentDepth = 0;
+
+#define BUFSIZE 8192
+char strbuf[BUFSIZE+1];
+char *strptr = NULL;
+unsigned int strlength = 0;
+
+void setup(void){
+	*strbuf = '\0';
+	strlength = 0;
+}
+
+char *teardown(){
+	char *s = checked_malloc(strlen(strbuf)+1);
+	strcpy(s,strbuf);
+	return s;
+}
+
+void appendstr(char *str){
+	if()
+}
+
+
+}%
+
+newline ['\n']
+
+
+%%
+
+%%
+
+main(){
+
+	int n = yylex();
+	
+}
+

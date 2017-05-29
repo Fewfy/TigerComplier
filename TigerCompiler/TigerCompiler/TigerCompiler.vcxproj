@@ -146,7 +146,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="frame.c" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="temp.c" />
+    <ClCompile Include="translate.c" />
+    <ClCompile Include="tree.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="frame.h" />
+    <ClInclude Include="table.h" />
+    <ClInclude Include="temp.h" />
+    <ClInclude Include="translate.h" />
+    <ClInclude Include="tree.h" />
+    <ClInclude Include="util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
